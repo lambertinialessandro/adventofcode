@@ -16,7 +16,6 @@ def main():
     if not content: return
     
     pairs = [pair.split("   ") for pair in content.split("\n")]
-    pairs.pop()
     listA, listB = [list(map(int, i)) for i in zip(*pairs)]
     listA.sort(), listB.sort()
 
