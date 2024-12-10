@@ -36,7 +36,7 @@ def main():
     
     print(operations[:5])
     
-    print(f"\n# SOLUTION: __: {totalSum}\n")
+    print(f"\n# SOLUTION: total calibration sum: {totalSum}\n")
 
 if __name__ == "__main__":
     main()
