@@ -10,12 +10,13 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from utils.read_file import read_file
 from utils.math_f import sign
+from utils.test_solution import test_solution
 
 def checkDelta(delta):
     m, M = min(delta), max(delta)
     return (m >= -3 and M <= -1) or (m >= 1 and M <= 3)
     
-
+@test_solution(name="DAY 02 PART 2", runs=100)
 def main():
     print("\n### DAY 02 PART 2 ###")
 

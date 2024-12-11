@@ -9,6 +9,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from utils.read_file import read_file
+from utils.test_solution import test_solution
 
 from abc import ABC
 import re
@@ -87,6 +88,7 @@ class diagonal_s_iterator(text_iterator):
         self.end = len(newText)
         self.text = newText
 
+@test_solution(name="DAY 04 PART 1", runs=100)
 def main():
     print("\n### DAY 04 PART 1 ###")
 

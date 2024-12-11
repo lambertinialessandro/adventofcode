@@ -9,11 +9,13 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from utils.read_file import read_file
+from utils.test_solution import test_solution
 
 def isSolutionCorrect(solution, nr, nc):
     [r, c] = solution
     return r >= 0 and r < nr and c >= 0 and c < nc
 
+@test_solution(name="DAY 08 PART 2", runs=100)
 def main():
     print("\n### DAY 08 PART 2 ###")
 

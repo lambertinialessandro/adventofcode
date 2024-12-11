@@ -9,6 +9,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from utils.read_file import read_file
+from utils.test_solution import test_solution
 
 def checkDelta(delta):
     m, M = min(delta), max(delta)
@@ -21,6 +22,7 @@ def evaluateNewReport(report, i):
 
     return checkDelta(delta)
 
+@test_solution(name="DAY 02 PART 2 [BRUTE FORCE]", runs=10)
 def main():
     print("\n### DAY 02 PART 2 [BRUTE FORCE] ###")
 

@@ -9,15 +9,17 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from utils.read_file import read_file
+from utils.test_solution import test_solution
 
-def recursiveF(tot, nums, i, tmpTot):
+def recursiveExploration(tot, nums, i, tmpTot):
     if i >= len(nums) or tmpTot > tot:
         return tmpTot == tot
     
-    isCorrectS = recursiveF(tot, nums, i+1, tmpTot + int(nums[i]))
+    isCorrectS = recursiveExploration(tot, nums, i+1, tmpTot + int(nums[i]))
     if isCorrectS: return True
-    return recursiveF(tot, nums, i+1, tmpTot * int(nums[i]))
+    return recursiveExploration(tot, nums, i+1, tmpTot * int(nums[i]))
 
+@test_solution(name="DAY 07 PART 1", runs=100)
 def main():
     print("\n### DAY 07 PART 1 ###")
 
@@ -31,7 +33,7 @@ def main():
 
     totalSum = 0
     for tot, nums in operations:
-        isCorrect = recursiveF(int(tot), nums, 1, int(nums[0]))
+        isCorrect = recursiveExploration(int(tot), nums, 1, int(nums[0]))
         totalSum += int(tot) if isCorrect else 0
     
     print(operations[:5])

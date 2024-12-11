@@ -9,7 +9,9 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from utils.read_file import read_file
+from utils.test_solution import test_solution
 
+@test_solution(name="DAY 10 PART 1", runs=100)
 def main():
     print("\n### DAY 10 PART 1 ###")
 
@@ -28,7 +30,7 @@ def main():
         endPos = set()
         opened = [[pos, 0]]
         while len(opened) > 0:
-            [[r, c], val] = opened.pop(len(opened) - 1)
+            [[r, c], val] = opened.pop()
 
             if val == 9:
                 endPos.add(tuple([r, c]))
