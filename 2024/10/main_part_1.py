@@ -29,7 +29,7 @@ def main():
         # exploring
         endPos = set()
         opened = [[pos, 0]]
-        while len(opened) > 0:
+        while opened:
             [[r, c], val] = opened.pop()
 
             if val == 9:

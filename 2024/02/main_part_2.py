@@ -23,7 +23,7 @@ def main():
     content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
     if not content: return
     
-    reports = [[int(num) for num in report.split(" ")] for report in content.split("\n")]
+    reports = [[*map(int, report.split(" "))] for report in content.split("\n")]
     deltas = [[succ - curr for curr, succ in zip(report[:-1], report[1:])]for report in reports]
 
     print("\nExample:")

@@ -24,7 +24,7 @@ def main():
 
     for stone in stones:
         opened = [[stone, 0]]
-        while len(opened) > 0:
+        while opened:
             [currStone, idx] = opened.pop()
             for i in range(idx, 25):
                 strStone = str(currStone)
