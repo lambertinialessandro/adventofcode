@@ -18,17 +18,18 @@ def main():
     if not content: return
     
     pairs = [pair.split("   ") for pair in content.split("\n")]
-    listA, listB = [list(map(int, i)) for i in zip(*pairs)]
-    listA.sort(), listB.sort()
+    list_a, list_b = zip(*pairs)
+    list_a = sorted(map(int, list_a))
+    list_b = sorted(map(int, list_b))
 
     print("\nExample:")
-    print(f"List A: {listA[0:10]}")
-    print(f"List B: {listB[0:10]}")
-    print(f"Distances: {[abs(a-b) for a, b in zip(listA[0:10], listB[0:10])]}")
-    print(f"Total distance: {sum(abs(a-b) for a, b in zip(listA[0:10], listB[0:10]))}")
-    
-    totalDistance = sum(abs(a-b) for a, b in zip(listA, listB))
-    print(f"\n# SOLUTION: Total distance: {totalDistance}\n")
+    print(f"List A: {list_a[:10]}")
+    print(f"List B: {list_b[:10]}")
+    print(f"Distances: {[abs(a - b) for a, b in zip(list_a[:10], list_b[:10])]}")
+    print(f"Total distance: {sum(abs(a - b) for a, b in zip(list_a, list_b))}")
+
+    total_distance = sum(abs(a - b) for a, b in zip(list_a, list_b))
+    print(f"\n# SOLUTION: Total distance: {total_distance}\n")
 
 if __name__ == "__main__":
     main()

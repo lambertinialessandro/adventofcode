@@ -45,24 +45,16 @@ def main():
                         else:
                             garden_plots[-1][1].add(tuple([o_r, o_c]))
 
-
-
-    #for line in visited: print("".join(line))
-    #print(f"garden_plots: {garden_plots}")
-
     area_edges = []
     for [area, garden_plot] in garden_plots:
         a_plot = list(garden_plot)[0]
-        #print(a_plot)
         plant = field[a_plot[0]][a_plot[1]]
         [rows, cols] = map(set, [*zip(*garden_plot)])
-        #print(f"garden_plot: {garden_plot}", rows, cols)
         
         area_edges.append([area, 0])
         for row in rows:
             [_, pcs] = [*zip(*sorted([plot for plot in garden_plot if plot[0] == row], key=lambda p: p[1]))]
 
-            #print(f"row: {row}", pcs)
             countEdges = 0
             isNew = [True, True]
             prevC = pcs[0]
@@ -88,7 +80,6 @@ def main():
         for col in cols:
             [prs, _] = [*zip(*sorted([plot for plot in garden_plot if plot[1] == col], key=lambda p: p[0]))]
 
-            #print(f"col: {col}", prs)
             countEdges = 0
             isNew = [True, True]
             prevR = prs[0]
@@ -110,16 +101,9 @@ def main():
                 prevR = pr
 
             area_edges[-1][1] += countEdges
-
-
         
         for col in cols:
             pass
-        
-        
-        #break
-
-    #print(f"\edges: {area_edges}")
     
     total_cost = sum([a * e for [a, e] in area_edges])
     print(f"\n# SOLUTION: total price of fencing all regions: {total_cost}\n")

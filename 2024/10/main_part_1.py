@@ -26,7 +26,6 @@ def main():
 
     trailheads = []
     for pos in startPos:
-        # exploring
         endPos = set()
         opened = [[pos, 0]]
         while opened:
@@ -40,20 +39,9 @@ def main():
                 if nextR >= 0 and nextR < nr and nextC >= 0 and nextC < nc:
                     nextVal = int(env[nextR][nextC])
                     if val + 1 == nextVal:
-                        #if nextVal == 9:
-                        #    endPos.add(tuple([r, c]))
-                        #else:
-                            opened.append([[nextR, nextC], nextVal])
+                        opened.append([[nextR, nextC], nextVal])
             
-            #print(opened)
         trailheads.extend(endPos)
-
-
-    #print(f"startPos: {startPos}\n")
-    #print(f"endPos: {endPos}\n")
-    #print(f"trailheads: {trailheads}\n")
-
-    #for line in env: print("".join(line))
     
     print(f"\n# SOLUTION: sum of the scores of all trailheads: {len(trailheads)}\n")
 

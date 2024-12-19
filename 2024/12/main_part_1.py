@@ -22,7 +22,6 @@ def main():
 
     field = [[*line] for line in content.split("\n")]
     nr, nc = len(field), len(field[0])
-    #print(field)
 
     garden_plots = []
     visited = [["." for _ in range(nc) ] for _ in range(nr)]
@@ -44,11 +43,6 @@ def main():
                                 opened.append([dr, dc])
                         else:
                             garden_plots[-1][1] += 1
-
-
-
-    #for line in visited: print("".join(line))
-    #print(f"garden_plots: {garden_plots}")
     
     total_cost = sum([n * c for [n, c] in garden_plots])
     print(f"\n# SOLUTION: total price of fencing all regions: {total_cost}\n")

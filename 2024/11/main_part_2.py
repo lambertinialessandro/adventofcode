@@ -36,7 +36,7 @@ def solveRecursive(stepFound, stone, blinks):
     
 
 
-@test_solution(name=f"DAY 11 PART 2", runs=100)
+@test_solution(name="DAY 11 PART 2", runs=100)
 def main():
     print("\n### DAY 11 PART 2 ###")
 
@@ -52,8 +52,6 @@ def main():
 
     for stone in stones:
         countStones += solveRecursive(stepFound, stone, blink)
-
-    #print(res)
     
     print(f"\n# SOLUTION: number of stones after 75 blinks: {countStones}\n")
 

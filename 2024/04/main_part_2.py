@@ -1,6 +1,6 @@
 
 '''
-Your puzzle answer was _____.
+Your puzzle answer was 1900.
 
 Both parts of this puzzle are complete! They provide two gold stars: **
 '''
@@ -34,8 +34,8 @@ def main():
     print(f'\t{YELLOW}{text[2][0]}{RESET}{text[2][1]}{YELLOW}{text[2][2]}{RESET}')
 
     countWords = 0
-    for r in range(len(text) - 102):
-        for c in range(len(text) - 102):
+    for r in range(len(text) - 2):
+        for c in range(len(text) - 2):
             mas1 = text[r][c] + text[r+1][c+1] + text[r+2][c+2]
             mas2 = text[r][c+2] + text[r+1][c+1] + text[r+2][c]
             if (mas1 == "MAS" or mas1 == "SAM") and (mas2 == "MAS" or mas2 == "SAM"):
