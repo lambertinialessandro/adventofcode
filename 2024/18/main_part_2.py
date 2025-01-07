@@ -23,7 +23,7 @@ class Tile(SmartEnum):
 def main():
     print("\n### DAY 18 PART 2 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
     
     dim_r, dim_c = 71, 71 # 71, 71 # 7, 7
@@ -66,6 +66,8 @@ def main():
         new_tile_pos += 1
         [c, r] = walls[new_tile_pos]
         env[r][c] = Tile.WALL()
+        # TODO: evaluate the path only if the obstacle is in the current path
+        # TODO: evaluate the path only from that position
 
     coordinates = f"{walls[new_tile_pos][0]},{walls[new_tile_pos][1]}"
     
