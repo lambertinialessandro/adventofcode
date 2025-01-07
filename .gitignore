@@ -6,6 +6,6 @@ __pycache__
 .env
 
 # AoC files
-input.txt
+input*.txt
 problem_part_1.txt
 problem_part_2.txt
