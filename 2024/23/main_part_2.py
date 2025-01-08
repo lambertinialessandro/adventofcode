@@ -15,7 +15,7 @@ from utils.test_solution import test_solution
 def main():
     print("\n### DAY 23 PART 2 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
 
     computers = {}

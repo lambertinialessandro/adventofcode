@@ -36,10 +36,11 @@ def compute_column(dc):
         return ">" * -dc
     return "<" * dc
 
+@test_solution(name="DAY 21 PART 1", runs=100)
 def main():
-    print("\n### DAY 20 PART 1 ###")
+    print("\n### DAY 21 PART 1 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
 
     numeric_btns = {

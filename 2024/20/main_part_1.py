@@ -26,10 +26,11 @@ class Direction(SmartEnum):
     SOUTH = 2
     WEST = 3
 
+@test_solution(name="DAY 20 PART 1", runs=100)
 def main():
     print("\n### DAY 20 PART 1 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
     
     possible_directions = {direction: [d for d in Direction if d != (direction - 2)] for direction in Direction}
@@ -98,7 +99,7 @@ def main():
 
 
 
-    if True:
+    """ if True:
         zero_env = [[0] * len(line) for line in env]
 
         for i, line in enumerate(env):
@@ -127,7 +128,7 @@ def main():
 
         plt.xticks([])
         plt.yticks([])
-        plt.show()
+        plt.show() """
     
     print(f"\n# SOLUTION: __: {count}\n")
 

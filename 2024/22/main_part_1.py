@@ -11,12 +11,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')
 from utils.read_file import read_file
 from utils.test_solution import test_solution
 
-import math
-
+@test_solution(name="DAY 22 PART 1", runs=100)
 def main():
     print("\n### DAY 22 PART 1 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
 
     secret_numbers = [*map(int, content.split("\n"))]

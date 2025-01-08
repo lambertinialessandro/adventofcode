@@ -17,11 +17,11 @@ class Operation(SmartEnum):
     OR = "OR"
     XOR = "XOR"
 
-#@test_solution(name="DAY 24 PART 1", runs=100)
+@test_solution(name="DAY 24 PART 1", runs=100)
 def main():
     print("\n### DAY 24 PART 1 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
 
 
