@@ -13,7 +13,7 @@ from utils.test_solution import test_solution
 
 import re
 
-#@test_solution(name="DAY 02 PART 1", runs=100)
+@test_solution(name="DAY 02 PART 1", runs=100)
 def main():
     print("\n### DAY 02 PART 1 ###")
 

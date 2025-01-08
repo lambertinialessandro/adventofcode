@@ -11,7 +11,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')
 from utils.read_file import read_file
 from utils.test_solution import test_solution
 
-#@test_solution(name="DAY 03 PART 1", runs=100)
+@test_solution(name="DAY 03 PART 1", runs=100)
 def main():
     print("\n### DAY 03 PART 1 ###")
 
