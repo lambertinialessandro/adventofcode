@@ -73,7 +73,7 @@ def main():
                 sum_gps_coordinates += i * 100 + j
     
     
-    print(f"\n# SOLUTION: __: {sum_gps_coordinates}\n")
+    print(f"\n# SOLUTION: sum of all boxes' GPS coordinates: {sum_gps_coordinates}\n")
 
 if __name__ == "__main__":
     main()

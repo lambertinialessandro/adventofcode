@@ -44,7 +44,7 @@ def main():
 
     #print(sorted(three_connections))
     
-    print(f"\n# SOLUTION: __: {len(three_connections)}\n")
+    print(f"\n# SOLUTION: number of connections that contain at least one computer with a name that starts with t: {len(three_connections)}\n")
 
 if __name__ == "__main__":
     main()

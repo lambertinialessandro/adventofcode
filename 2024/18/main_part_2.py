@@ -71,7 +71,7 @@ def main():
 
     coordinates = f"{walls[new_tile_pos][0]},{walls[new_tile_pos][1]}"
     
-    print(f"\n# SOLUTION: __: {coordinates}\n")
+    print(f"\n# SOLUTION: coordinates of the first byte that will prevent the exit: {coordinates}\n")
 
 if __name__ == "__main__":
     main()

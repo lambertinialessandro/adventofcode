@@ -171,7 +171,7 @@ def main():
     combined_gates = "".join([str(gates[gate]) for gate in out_gates])
     print(combined_gates, int(combined_gates, 2))
     
-    print(f"\n# SOLUTION: __: {int(combined_gates, 2)}\n")
+    print(f"\n# SOLUTION: decimal number output on the wires starting with z: {int(combined_gates, 2)}\n")
 
 if __name__ == "__main__":
     main()

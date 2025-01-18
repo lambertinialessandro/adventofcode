@@ -39,7 +39,7 @@ def main():
         if overlaps == 0:
             break
     
-    print(f"\n# SOLUTION: __: {k}\n")
+    print(f"\n# SOLUTION: fewest number of seconds: {k}\n")
 
 if __name__ == "__main__":
     main()

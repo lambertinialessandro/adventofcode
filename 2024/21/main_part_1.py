@@ -116,7 +116,7 @@ def main():
         complexity_sum += char_count * numeric_part
 
     
-    print(f"\n# SOLUTION: __: {complexity_sum}\n")
+    print(f"\n# SOLUTION: sum of complexities of five codes: {complexity_sum}\n")
 
 if __name__ == "__main__":
     main()

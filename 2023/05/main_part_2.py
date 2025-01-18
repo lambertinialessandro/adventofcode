@@ -200,7 +200,7 @@ def main():
     
     min_location = min(seeds2location, key=lambda x: x[0])
     
-    print(f"\n# SOLUTION: {min_location[0]}\n")
+    print(f"\n# SOLUTION: lowest location number: {min_location[0]}\n")
 
 if __name__ == "__main__":
     main()

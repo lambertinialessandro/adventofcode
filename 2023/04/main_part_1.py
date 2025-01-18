@@ -28,7 +28,7 @@ def main():
         if count_w_n != 0:
             points += 2**(count_w_n-1)
     
-    print(f"\n# SOLUTION: {points}\n")
+    print(f"\n# SOLUTION:  points worth in total: {points}\n")
 
 if __name__ == "__main__":
     main()

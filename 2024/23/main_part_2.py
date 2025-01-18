@@ -53,7 +53,7 @@ def main():
 
     passwords = set(tuple(sorted(recursive_f([k], k)[0])) for k in sorted(list(computers)))
     
-    print(f"\n# SOLUTION: __: {','.join(max(passwords, key=lambda x: len(x)))}\n")
+    print(f"\n# SOLUTION: password to get into the LAN party: {','.join(max(passwords, key=lambda x: len(x)))}\n")
 
 if __name__ == "__main__":
     main()

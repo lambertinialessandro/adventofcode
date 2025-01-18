@@ -42,7 +42,7 @@ def main():
             else:
                 scratchcards_winned.append(1 + 1 * num_scratchcards)
     
-    print(f"\n# SOLUTION: {total_scratchcards}\n")
+    print(f"\n# SOLUTION: total scratchcards at the end: {total_scratchcards}\n")
 
 if __name__ == "__main__":
     main()

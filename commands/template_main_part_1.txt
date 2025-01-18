@@ -18,7 +18,7 @@ def main():
     content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
     if not content: return
 
-    print(f"\n# SOLUTION: {0}\n")
+    print(f"\n# SOLUTION: ___: {0}\n")
 
 if __name__ == "__main__":
     main()

@@ -45,7 +45,7 @@ def main():
             sum_possible_games += mult
 
 
-    print(f"\n# SOLUTION: {sum_possible_games}\n")
+    print(f"\n# SOLUTION: sum of the power of these sets: {sum_possible_games}\n")
 
 if __name__ == "__main__":
     main()

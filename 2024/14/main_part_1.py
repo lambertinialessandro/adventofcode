@@ -40,7 +40,7 @@ def main():
     
     print(quadrants)
     safety_factor = math.prod(quadrants)
-    print(f"\n# SOLUTION: __: {safety_factor}\n")
+    print(f"\n# SOLUTION: safety factor after 100 seconds: {safety_factor}\n")
 
 if __name__ == "__main__":
     main()

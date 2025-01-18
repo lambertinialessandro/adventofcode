@@ -50,7 +50,7 @@ def main():
             sum_possible_games += int(game_id)
 
 
-    print(f"\n# SOLUTION: {sum_possible_games}\n")
+    print(f"\n# SOLUTION: sum of the IDs of these games: {sum_possible_games}\n")
 
 if __name__ == "__main__":
     main()

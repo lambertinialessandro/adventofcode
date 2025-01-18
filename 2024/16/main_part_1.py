@@ -99,6 +99,7 @@ def main():
     plt.show()
     
     print(f"\n# SOLUTION: __: {score}\n")
+    print(f"\n# SOLUTION: tiles of the best paths: {score}\n")
 
 if __name__ == "__main__":
     main()

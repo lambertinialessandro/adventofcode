@@ -130,7 +130,7 @@ def main():
         plt.yticks([])
         plt.show() """
     
-    print(f"\n# SOLUTION: __: {count}\n")
+    print(f"\n# SOLUTION: number of cheats that save at least 100 picoseconds: {count}\n")
 
 if __name__ == "__main__":
     main()

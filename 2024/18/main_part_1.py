@@ -59,6 +59,7 @@ def main():
                 heapq.heappush(opened, tuple([n_cost, h+1, npr, npc]))
     
     print(f"\n# SOLUTION: __: {score}\n")
+    print(f"\n# SOLUTION: minimum number of steps: {score}\n")
 
 if __name__ == "__main__":
     main()

@@ -70,7 +70,7 @@ def main():
 
 
 
-    print(f"\n# SOLUTION: {sum_adjacent}\n")
+    print(f"\n# SOLUTION: sum of all of the part numbers in the engine schematic: {sum_adjacent}\n")
 
 if __name__ == "__main__":
     main()

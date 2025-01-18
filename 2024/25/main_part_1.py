@@ -54,6 +54,7 @@ def main():
                 count_matching_pairs += 1
 
     print(f"\n# SOLUTION: __: {count_matching_pairs}\n")
+    print(f"\n# SOLUTION: number of unique lock/key pairs: {count_matching_pairs}\n")
 
 if __name__ == "__main__":
     main()

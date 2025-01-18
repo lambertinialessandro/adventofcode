@@ -106,7 +106,7 @@ def main():
 
     min_location = min(seeds2location)
     
-    print(f"\n# SOLUTION: {min_location}\n")
+    print(f"\n# SOLUTION: lowest location number: {min_location}\n")
 
 if __name__ == "__main__":
     main()

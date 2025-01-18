@@ -71,7 +71,7 @@ def main():
         i += 1
 
     output = output[:-1]
-    print(f"\n# SOLUTION: __: {output}\n")
+    print(f"\n# SOLUTION: program output commas separated: {output}\n")
 
 if __name__ == "__main__":
     main()
