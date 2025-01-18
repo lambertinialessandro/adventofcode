@@ -1,7 +1,7 @@
 def read_file(file_path):
     try:
         with open(file_path, 'r') as file:
-            return file.read().strip()
+            return file.read()#.strip()
     except FileNotFoundError:
         print(f"The file {file_path} does not exist.")
         return None
