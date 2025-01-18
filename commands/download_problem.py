@@ -59,8 +59,11 @@ def download_problem(year, day):
                 if "--- Part Two" in formatted_text:
                     part_one = re.findall(r"(--- Day.*?)Your puzzle answer was", formatted_text, re.DOTALL)[0]
 
-                    if "To begin, get your puzzle input" in formatted_text:
-                        part_two = re.findall(r"(--- Part Two.*?)To begin, get your puzzle input", formatted_text, re.DOTALL)[0]
+                    if "Answer:" in formatted_text:
+                        part_two = re.findall(r"(--- Part Two.*?)Answer:", formatted_text, re.DOTALL)[0]
+                    elif "You don't have enough stars" in formatted_text:
+                        # TODO: maybe is better to set part_two = None
+                        part_two = re.findall(r"(--- Part Two.*?)You don't have enough stars", formatted_text, re.DOTALL)[0]
                     else:
                         part_two = re.findall(r"(--- Part Two.*?)Your puzzle answer was", formatted_text, re.DOTALL)[0]
                 else:

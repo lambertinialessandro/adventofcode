@@ -42,8 +42,15 @@ def start_problem(year, day):
         assert time.localtime().tm_mon == 12, "It's not December yet"
         assert int_day <= time.localtime().tm_mday, "Day must be less than or equal to the current day"
 
-    download_input(year, day)
-    download_problem(year, day)
+    try:
+        download_input(year, day)
+    except:
+        print("\033[91mError\033[0m while downloading input file\n")
+
+    try:
+        download_problem(year, day)
+    except:
+        print("\033[91mError\033[0m while downloading problem files\n")
 
     # Create the main_part_1.py file
     if not os.path.exists(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_1.py")):
