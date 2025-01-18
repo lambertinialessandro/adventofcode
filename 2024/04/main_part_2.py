@@ -18,7 +18,7 @@ RESET = '\033[0m'
 def main():
     print("\n### DAY 04 PART 2 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
 
     text = content.split("\n")

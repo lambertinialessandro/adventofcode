@@ -17,7 +17,7 @@ def main():
 
     neighbors = [[-1, 0], [0, 1], [1, 0], [0, -1]]
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
 
     field = [[*line] for line in content.split("\n")]

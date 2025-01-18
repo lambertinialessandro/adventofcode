@@ -23,7 +23,7 @@ class Tile(SmartEnum):
 def main():
     print("\n### DAY 18 PART 1 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
     
     dim_r, dim_c = 71, 71 # 71, 71 # 7, 7
@@ -58,7 +58,6 @@ def main():
                 n_cost = h + 1 * math.sqrt((er-npr)**2 + (ec-npc)**2)
                 heapq.heappush(opened, tuple([n_cost, h+1, npr, npc]))
     
-    print(f"\n# SOLUTION: __: {score}\n")
     print(f"\n# SOLUTION: minimum number of steps: {score}\n")
 
 if __name__ == "__main__":

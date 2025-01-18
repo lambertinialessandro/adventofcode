@@ -16,7 +16,7 @@ from utils.test_solution import test_solution
 def main():
     print("\n### DAY 25 PART 1 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
     if not content: return
 
     locks = []
@@ -53,7 +53,6 @@ def main():
             else:
                 count_matching_pairs += 1
 
-    print(f"\n# SOLUTION: __: {count_matching_pairs}\n")
     print(f"\n# SOLUTION: number of unique lock/key pairs: {count_matching_pairs}\n")
 
 if __name__ == "__main__":

@@ -26,7 +26,7 @@ def evaluateNewReport(report, i):
 def main():
     print("\n### DAY 02 PART 2 [BRUTE FORCE] ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
     
     reports = [[*map(int, report.split(" "))] for report in content.split("\n")]

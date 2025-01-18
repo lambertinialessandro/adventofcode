@@ -26,11 +26,11 @@ class Direction(SmartEnum):
     SOUTH = 2
     WEST = 3
 
-#@test_solution(name="DAY 16 PART 1", runs=10)
+@test_solution(name="DAY 16 PART 1", runs=10)
 def main():
     print("\n### DAY 16 PART 1 ###")
 
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
     possible_directions = {direction: [d for d in Direction if d != (direction - 2)] for direction in Direction}
     moves = {Direction.NORTH: [-1, 0], Direction.EST: [0, 1], Direction.SOUTH: [1, 0], Direction.WEST: [0, -1]}
@@ -68,7 +68,7 @@ def main():
                 if tuple([npr, npc]) not in visited or visited[tuple([npr, npc])] > n_cost:
                     heapq.heappush(opened, tuple([n_cost, npr, npc, direction]))
 
-    zero_env = [[0] * len(line) for line in env]
+    """ zero_env = [[0] * len(line) for line in env]
 
     for i, line in enumerate(env):
         for j, char in enumerate(line):
@@ -96,9 +96,8 @@ def main():
 
     plt.xticks([])
     plt.yticks([])
-    plt.show()
+    plt.show() """
     
-    print(f"\n# SOLUTION: __: {score}\n")
     print(f"\n# SOLUTION: tiles of the best paths: {score}\n")
 
 if __name__ == "__main__":

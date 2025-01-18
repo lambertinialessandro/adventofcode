@@ -16,7 +16,7 @@ def main():
     print("\n### DAY 10 PART 2 ###")
     
     actions = [[1, 0], [0, 1], [-1, 0], [0, -1]]
-    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt"))
+    content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
 
     env = [[*line] for line in content.split("\n")]
