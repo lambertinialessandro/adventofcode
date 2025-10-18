@@ -1,5 +1,10 @@
 
-# AdventOfCode
+# 🎄 Advent of Code
+
+A collection of my Advent of Code solutions over the years.  
+Each year’s folder contains Python solutions for that year’s challenges.
+
+# 📊 Yearly Progress
 
 | **Year** | **Stars** | **Problems** | **Progress** | **Notes** |
 |:--------:|:---------:|:------------:|:-------------:|:---------:|
