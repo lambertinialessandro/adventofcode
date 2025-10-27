@@ -29,3 +29,103 @@ This repository:
 - **Automation scripts** in the `commands/` folder to set up problems, download inputs, and scaffold solutions.
 - **Programming language:** Python 3.12
 
+# 🚀 Setup & Deployment
+
+Follow these steps to get started locally:
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/lambertinialessandro/adventofcode.git
+cd adventofcode
+```
+
+## 2. Create a virtual environment (recommended)
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # On Linux/macOS
+# OR
+.venv\Scripts\activate      # On Windows
+```
+
+## 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 4. Configure environment variables
+
+Copy the environment template and edit your personal settings
+
+```bash
+cp .env.template .env
+```
+
+Then open `.env` in your text editor and fill in any required values
+
+```bash
+AOC_SESSION=your_session_id
+```
+
+> 💡 You can get your Advent of Code session cookie from your browser’s DevTools after logging in at [adventofcode.com](https://adventofcode.com).
+
+## 5. Run automation commands (optional)
+
+The `commands/` folder contains helper scripts for common tasks, such as fetching problem inputs automatically.
+
+### Command-line usage:
+
+```bash
+python ./commands/start_problem.py 2024 01
+```
+
+### GUI usage:
+
+`aoc_manager.py` provides a simple interface to run these tasks visually:
+
+```bash
+python ./aoc_manager.py
+```
+
+## 6. Run solutions
+
+Navigate to a year’s folder and execute the solution for a given day:
+
+```bash
+cd 2024/01
+python main_part_01.py
+```
+
+# 🗂️ Directory Structure
+
+```txt
+adventofcode/
+├─ 2024/
+│   ├─ 01/
+│   ├─ ...
+│   └─ README.md
+├─ ...
+│
+├─ commands/           # Automation scripts CLI
+│   └─ README.md
+├─ utils/
+├─ requirements.txt    # Global dependencies
+├─ aoc_manager.py      # Automation scripts GUI
+├─ .env.template       # Environment variable template
+└─ README.md
+```
+
+# 🤝 Contributing
+
+Contributions are welcome! You can help by:
+- Improving automation scripts in the commands/ folder.
+- Fixing bugs or optimizing existing solutions.
+
+How to contribute:
+1. Fork the repository.
+1. Create a new branch: git checkout -b feature/my-solution
+1. Make your changes.
+1. Submit a pull request with a clear description of your changes.
+
