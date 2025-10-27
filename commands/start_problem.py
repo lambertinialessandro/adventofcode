@@ -6,8 +6,8 @@
     year: Year of the Advent of Code
     day: Day of the Advent of Code
 @ Return:
-    Write the problem statement in the respective year/day folder
-    Create a new file for the solution
+    Write the problem statement in the respective year/day folder.
+    Create 2 new files for the solution.
 
 @ Example:
     start_problem 2015 01
@@ -15,9 +15,10 @@
 
 import os
 import sys
-import requests
 import time
-import re
+from dotenv import load_dotenv
+
+load_dotenv()
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.read_file import read_file
@@ -25,6 +26,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__))))
 
 from download_input import download_input
 from download_problem import download_problem
+from create_solution import create_solution
 
 def start_problem(year, day):
     assert os.getenv("AOC_SESSION"), "AOC_SESSION environment variable is not set"
@@ -41,6 +43,8 @@ def start_problem(year, day):
     if int_year == time.localtime().tm_year:
         assert time.localtime().tm_mon == 12, "It's not December yet"
         assert int_day <= time.localtime().tm_mday, "Day must be less than or equal to the current day"
+    
+    print(f"\n --::@ Problem {int_year} {int_day} at https://adventofcode.com/{int_year}/day/{int_day}\n")
 
     try:
         download_input(year, day)
@@ -52,25 +56,10 @@ def start_problem(year, day):
     except:
         print("\033[91mError\033[0m while downloading problem files\n")
 
-    # Create the main_part_1.py file
-    if not os.path.exists(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_1.py")):
-        content = read_file(os.path.join(os.path.dirname(__file__),"template_main_part_1.txt"))
-        content = re.sub(r"DAY ____ PART 1", f"DAY {day} PART 1", content)
-        with open(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_1.py"), "w") as file:
-            file.write(content)
-        print("\033[92mFile main_part_1.py\033[0m created\n")
-    else:
-        print("\033[92mFile main_part_1.py\033[0m already exists\n")
-    
-    # Create the main_part_2.py file
-    if not os.path.exists(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_2.py")):
-        content = read_file(os.path.join(os.path.dirname(__file__),"template_main_part_2.txt"))
-        content = re.sub(r"DAY ____ PART 2", f"DAY {day} PART 2", content)
-        with open(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_2.py"), "w") as file:
-            file.write(content)
-        print("\033[92mFile main_part_2.py\033[0m created\n")
-    else:
-        print("\033[92mFile main_part_2.py\033[0m already exists\n")
+    try:
+        create_solution(year, day)
+    except:
+        print("\033[91mError\033[0m while downloading problem files\n")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:

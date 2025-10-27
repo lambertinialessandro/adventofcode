@@ -14,13 +14,15 @@
 """
 
 import os
-import sys
-import requests
-import time
 import re
+import sys
+import time
+import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def download_problem(year, day):
-
     assert os.getenv("AOC_SESSION"), "AOC_SESSION environment variable is not set"
 
     assert year.isdigit(), "Year must be a number"
