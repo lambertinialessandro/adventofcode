@@ -68,37 +68,38 @@ def main():
                 if tuple([npr, npc]) not in visited or visited[tuple([npr, npc])] > n_cost:
                     heapq.heappush(opened, tuple([n_cost, npr, npc, direction]))
 
-    """ zero_env = [[0] * len(line) for line in env]
-
-    for i, line in enumerate(env):
-        for j, char in enumerate(line):
-            if char == "#":
-                zero_env[i][j] = -1
-
-    for k, v in visited.items():
-        [r, c] = k
-
-        if zero_env[r][c] == 0:
-            zero_env[r][c] = v
-        else:
-            zero_env[r][c] = min(zero_env[r][c], v)
-    
-    import matplotlib.pyplot as plt
-    import numpy as np
-    zero_env_array = np.array(zero_env)
-
-    plt.imshow(zero_env_array, cmap='viridis', origin='upper', interpolation='none')
-    plt.colorbar(label='Value')
-    plt.title('Heatmap of Zero Environment')
-
-    plt.scatter(sc, sr, color='red', s=100, edgecolors='black', label='Start (S)')
-    plt.scatter(ec, er, color='red', s=100, edgecolors='black', label='End (E)')
-
-    plt.xticks([])
-    plt.yticks([])
-    plt.show() """
-    
     print(f"\n# SOLUTION: tiles of the best paths: {score}\n")
+    
+    if False:
+        zero_env = [[0] * len(line) for line in env]
+
+        for i, line in enumerate(env):
+            for j, char in enumerate(line):
+                if char == "#":
+                    zero_env[i][j] = -1
+
+        for k, v in visited.items():
+            [r, c] = k
+
+            if zero_env[r][c] == 0:
+                zero_env[r][c] = v
+            else:
+                zero_env[r][c] = min(zero_env[r][c], v)
+        
+        import matplotlib.pyplot as plt
+        import numpy as np
+        zero_env_array = np.array(zero_env)
+
+        plt.imshow(zero_env_array, cmap='viridis', origin='upper', interpolation='none')
+        plt.colorbar(label='Value')
+        plt.title('Heatmap of Zero Environment')
+
+        plt.scatter(sc, sr, color='red', s=100, edgecolors='black', label='Start (S)')
+        plt.scatter(ec, er, color='red', s=100, edgecolors='black', label='End (E)')
+
+        plt.xticks([])
+        plt.yticks([])
+        plt.show()
 
 if __name__ == "__main__":
     main()

@@ -31,7 +31,7 @@ Each problem is solved in Python, with a focus on:
 | 13 | ⭐⭐ | 0.001s | 0.001s | System of linear equations |
 | 14 | ⭐⭐ | 0.001s | 1.040s |  |
 | 15 | ⭐⭐ | 0.018s | 0.026s |  |
-| 16 | ⭐🌑 | 0.425s |  |  |
+| 16 | ⭐⭐ | 0.037s | 0.747s | Dijkstra with turn cost |
 | 17 | ⭐⭐ | 0.000s | 0.000s | System of linear equations (not totally satisfied because of the second loop for the error correction) |
 | 18 | ⭐⭐ | 0.011s | 4.669s | A* search |
 | 19 | ⭐⭐ | 0.061s | 0.396s | Caching recursive algorithm |
