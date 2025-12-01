@@ -16,7 +16,7 @@ Each problem is solved in Python, with a focus on:
 
 | **Problem Number** | **Stars** | **Time Part 01** | **Time Part 02** | **Notes** |
 |---|---|---|---|---|
-| 01 | ⭐🌑 | 0.001s |  |  |
+| 01 | ⭐🌗 | 0.001s |  |  |
 | 02 | ⭐⭐ | 0.001s | 0.001s |  |
 | 03 | ⭐🌑 | 0.003s |  |  |
 | 04 | ⭐⭐ | 0.001s | 0.001s |  |
@@ -47,5 +47,6 @@ Each problem is solved in Python, with a focus on:
 - Execution times are measured locally (Python 3.12).
 - Stars indicate completion:
     - ⭐ = solved
-    - 🌑 = unsolved or in progress
+    - 🌗 = in progress
+    - 🌑 = unsolved
 - Some later puzzles will be revisited for optimization.

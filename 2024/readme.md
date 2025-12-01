@@ -1,7 +1,7 @@
 
 # 🎄 AdventOfCode 2024
 
-![Stars](https://img.shields.io/badge/Stars-44%2F50-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-25%2F25-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-██████████████████▒░_92%25-777777)
+![Stars](https://img.shields.io/badge/Stars-45%2F50-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-25%2F25-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-██████████████████▒░_92%25-777777)
 
 # 📖 About
 
@@ -14,7 +14,7 @@ Each problem is solved in Python, with a focus on:
 
 # 🧠 Progress Overview
 
-| **Problem Number** | **Stars** | **Time Part 1** | **Time Part 2** | **Notes** |
+| **Problem Number** | **Stars** | **Time Part 01** | **Time Part 02** | **Notes** |
 |---|---|---|---|---|
 | 01 | ⭐⭐ | 0.001s | 0.010s |  |
 | 02 | ⭐⭐ | 0.002s | 0.003s |  |
@@ -35,8 +35,8 @@ Each problem is solved in Python, with a focus on:
 | 17 | ⭐⭐ | 0.000s | 0.000s | System of linear equations (not totally satisfied because of the second loop for the error correction) |
 | 18 | ⭐⭐ | 0.011s | 4.669s | A* search |
 | 19 | ⭐⭐ | 0.061s | 0.396s | Caching recursive algorithm |
-| 20 | ⭐🌑 | 0.036s |  |  |
-| 21 | ⭐🌑 | 0.000s |  |  |
+| 20 | ⭐🌗 | 0.036s |  |  |
+| 21 | ⭐🌗 | 0.000s |  | DFS |
 | 22 | ⭐🌑 | 0.748s |  |  |
 | 23 | ⭐⭐ | 0.011s | 0.010s |  |
 | 24 | ⭐🌑 | 0.002s |  |  |
@@ -47,5 +47,6 @@ Each problem is solved in Python, with a focus on:
 - Execution times are measured locally (Python 3.12).
 - Stars indicate completion:
     - ⭐ = solved
-    - 🌑 = unsolved or in progress
+    - 🌗 = in progress
+    - 🌑 = unsolved
 - Some later puzzles will be revisited for optimization.
