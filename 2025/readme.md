@@ -1,7 +1,7 @@
 
 # 🎄 AdventOfCode 2025
 
-![Stars](https://img.shields.io/badge/Stars-2%2F24-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-1%2F12-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-█▓░░░░░░░░░░░░░░░░░░_8%25-777777)
+![Stars](https://img.shields.io/badge/Stars-6%2F24-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-3%2F12-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-█████░░░░░░░░░░░░░░░_25%25-777777)
 
 # 📖 About
 
@@ -17,8 +17,8 @@ Each problem is solved in Python, with a focus on:
 | **Problem Number** | **Stars** | **Time Part 01** | **Time Part 02** | **Notes** |
 |---|---|---|---|---|
 | 01 | ⭐⭐ | 0.001s | 0.001s |  |
-| 02 | 🌑🌑 |  |  |  |
-| 03 | 🌑🌑 |  |  |  |
+| 02 | ⭐⭐ | 0.001s | 0.001s | problem 02: first version 0.693s, optimized version: 0.001s |
+| 03 | ⭐⭐ | 0.002s | 1.352s | problem 02: first version 3.593s, optimized version: 1.352s |
 | 04 | 🌑🌑 |  |  |  |
 | 05 | 🌑🌑 |  |  |  |
 | 06 | 🌑🌑 |  |  |  |

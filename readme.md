@@ -8,17 +8,17 @@ Each year’s folder contains Python solutions for that year’s challenges.
 
 | **Year** | **Stars** | **Problems** | **Progress** | **Notes** |
 |:--------:|:---------:|:------------:|:-------------:|:---------:|
-| [**2025**](https://github.com/lambertinialessandro/adventofcode/tree/main/2025) | `2/24` 🌘 | `1/12` 🧠 | █▓░░░░░░░░░░░░░░░░░░ &nbsp; 8% | Second year! 🔥 |
+| [**2025**](https://github.com/lambertinialessandro/adventofcode/tree/main/2025) |  `6/24` 🌘 |  `3/12` 🧠 | █████░░░░░░░░░░░░░░░ &nbsp; 25% | Second year! 🔥 |
 | [**2024**](https://github.com/lambertinialessandro/adventofcode/tree/main/2024) | `45/50` 🌕 | `25/25` 🎯 | ██████████████████▒░ &nbsp; 92% | First year! 🔥 |
 | [**2023**](https://github.com/lambertinialessandro/adventofcode/tree/main/2023) | `16/50` 🌘 | `10/25` 🧠 | ██████▓░░░░░░░░░░░░░ &nbsp; 34% | Some unfinished business… |
-| [**2022**](https://github.com/lambertinialessandro/adventofcode/tree/main/2022) | `0/50` 🌑 | `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
-| [**2021**](https://github.com/lambertinialessandro/adventofcode/tree/main/2021) | `0/50` 🌑 | `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
-| [**2020**](https://github.com/lambertinialessandro/adventofcode/tree/main/2020) | `0/50` 🌑 | `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
-| [**2019**](https://github.com/lambertinialessandro/adventofcode/tree/main/2019) | `0/50` 🌑 | `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
-| [**2018**](https://github.com/lambertinialessandro/adventofcode/tree/main/2018) | `0/50` 🌑 | `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
-| [**2017**](https://github.com/lambertinialessandro/adventofcode/tree/main/2017) | `0/50` 🌑 | `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
-| [**2016**](https://github.com/lambertinialessandro/adventofcode/tree/main/2016) | `0/50` 🌑 | `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
-| [**2015**](https://github.com/lambertinialessandro/adventofcode/tree/main/2015) | `0/50` 🌑 | `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
+| [**2022**](https://github.com/lambertinialessandro/adventofcode/tree/main/2022) |  `0/50` 🌑 |  `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
+| [**2021**](https://github.com/lambertinialessandro/adventofcode/tree/main/2021) |  `0/50` 🌑 |  `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
+| [**2020**](https://github.com/lambertinialessandro/adventofcode/tree/main/2020) |  `0/50` 🌑 |  `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
+| [**2019**](https://github.com/lambertinialessandro/adventofcode/tree/main/2019) |  `0/50` 🌑 |  `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
+| [**2018**](https://github.com/lambertinialessandro/adventofcode/tree/main/2018) |  `0/50` 🌑 |  `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
+| [**2017**](https://github.com/lambertinialessandro/adventofcode/tree/main/2017) |  `0/50` 🌑 |  `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
+| [**2016**](https://github.com/lambertinialessandro/adventofcode/tree/main/2016) |  `0/50` 🌑 |  `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
+| [**2015**](https://github.com/lambertinialessandro/adventofcode/tree/main/2015) |  `0/50` 🌑 |  `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
 
 # 🧭 About
 
