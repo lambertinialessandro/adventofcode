@@ -39,7 +39,7 @@ def create_solution(year, day):
 
     # Create the main_part_1.py file
     if not os.path.exists(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_1.py")):
-        content = read_file(os.path.join(os.path.dirname(__file__),"template_main_part_1.txt"))
+        content = read_file(os.path.join(os.path.dirname(__file__), "templates", "template_main_part_1.txt"))
         content = re.sub(r"DAY ____ PART 1", f"DAY {day} PART 1", content)
         with open(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_1.py"), "w") as file:
             file.write(content)
@@ -49,7 +49,7 @@ def create_solution(year, day):
     
     # Create the main_part_2.py file
     if not os.path.exists(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_2.py")):
-        content = read_file(os.path.join(os.path.dirname(__file__),"template_main_part_2.txt"))
+        content = read_file(os.path.join(os.path.dirname(__file__), "templates", "template_main_part_2.txt"))
         content = re.sub(r"DAY ____ PART 2", f"DAY {day} PART 2", content)
         with open(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_2.py"), "w") as file:
             file.write(content)
