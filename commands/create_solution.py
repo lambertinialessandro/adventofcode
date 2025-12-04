@@ -2,6 +2,7 @@
 @ Description:
     Start a problem for a specific year/day of the Advent of Code
     The AOC_SESSION environment variable must be set with the session cookie
+    The USER_AGENT environment variable must be set
 @ Parameters:
     year: Year of the Advent of Code
     day: Day of the Advent of Code

@@ -3,6 +3,7 @@
 @ Description:
     Download the problem statement for a specific year/day of the Advent of Code
     The AOC_SESSION environment variable must be set with the session cookie
+    The USER_AGENT environment variable must be set
 @ Parameters:
     year: Year of the Advent of Code
     day: Day of the Advent of Code
@@ -23,6 +24,7 @@ load_dotenv()
 
 def download_input(year, day):
     assert os.getenv("AOC_SESSION"), "AOC_SESSION environment variable is not set"
+    assert os.getenv("USER_AGENT"), "USER_AGENT environment variable is not set"
 
     assert year.isdigit(), "Year must be a number"
     int_year = int(year)
@@ -39,6 +41,7 @@ def download_input(year, day):
     if not os.path.exists(os.path.join(os.path.dirname(__file__), "..", year, day, "input.txt")):
         session = requests.Session()
         session.cookies.set("session", os.getenv("AOC_SESSION"))
+        session.headers.update({"User-Agent": os.getenv("USER_AGENT")})
         response = session.get(f"https://adventofcode.com/{year}/day/{int_day}/input")
 
         if response.status_code == 200:

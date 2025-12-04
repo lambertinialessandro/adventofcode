@@ -68,6 +68,7 @@ Then open `.env` in your text editor and fill in any required values
 
 ```bash
 AOC_SESSION=your_session_id
+USER_AGENT={project name} (Python requests; +{repository link}; {contact info})
 ```
 
 > 💡 You can get your Advent of Code session cookie from your browser’s DevTools after logging in at [adventofcode.com](https://adventofcode.com).

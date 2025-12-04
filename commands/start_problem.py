@@ -2,6 +2,7 @@
 @ Description:
     Start a problem for a specific year/day of the Advent of Code
     The AOC_SESSION environment variable must be set with the session cookie
+    The USER_AGENT environment variable must be set
 @ Parameters:
     year: Year of the Advent of Code
     day: Day of the Advent of Code
@@ -20,16 +21,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.read_file import read_file
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__))))
-
 from download_input import download_input
 from download_problem import download_problem
 from create_solution import create_solution
 
 def start_problem(year, day):
     assert os.getenv("AOC_SESSION"), "AOC_SESSION environment variable is not set"
+    assert os.getenv("USER_AGENT"), "USER_AGENT environment variable is not set"
 
     assert year.isdigit(), "Year must be a number"
     int_year = int(year)
