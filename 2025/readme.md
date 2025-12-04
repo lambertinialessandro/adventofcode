@@ -1,7 +1,7 @@
 
 # 🎄 AdventOfCode 2025
 
-![Stars](https://img.shields.io/badge/Stars-8%2F24-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-4%2F12-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-█████▒░░░░░░░░░░░░░░_33%25-777777)
+![Stars](https://img.shields.io/badge/Stars-8%2F24-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-4%2F12-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-██████▒░░░░░░░░░░░░░_33%25-777777)
 
 # 📖 About
 
