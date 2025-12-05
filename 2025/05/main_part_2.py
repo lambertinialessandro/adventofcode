@@ -27,7 +27,6 @@ def main():
         [[*map(int, range.split("-"))] for range in id_ranges.split("\n")],
         key=lambda x: x[0],
     )
-    # print(id_ranges)
 
     prev_right = 0
     for left, right in id_ranges:
