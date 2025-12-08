@@ -1,7 +1,7 @@
 
 # 🎄 AdventOfCode 2025
 
-![Stars](https://img.shields.io/badge/Stars-12%2F24-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-6%2F12-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-██████████░░░░░░░░░░_50%25-777777)
+![Stars](https://img.shields.io/badge/Stars-14%2F24-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-7%2F12-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-███████████▓░░░░░░░░_58%25-777777)
 
 # 📖 About
 
@@ -22,7 +22,7 @@ Each problem is solved in Python, with a focus on:
 | 04 | ⭐⭐ | 0.004s | 0.025s | sliding window. problem 01: first version 0.006s, optimized version: 0.004s |
 | 05 | ⭐⭐ | 0.002s | 0.000s | problem 01: first version 0.004s, optimized version: 0.002s  |
 | 06 | ⭐⭐ | 0.001s | 0.002s |  |
-| 07 | 🌑🌑 |  |  |  |
+| 07 | ⭐⭐ | 0.001s | 0.002s | DFS + caching |
 | 08 | 🌑🌑 |  |  |  |
 | 09 | 🌑🌑 |  |  |  |
 | 10 | 🌑🌑 |  |  |  |
