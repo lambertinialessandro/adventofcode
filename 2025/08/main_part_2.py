@@ -1,6 +1,6 @@
 
 '''
-Your puzzle answer was ____.
+Your puzzle answer was 2573952864.
 
 Both parts of this puzzle are complete! They provide two gold stars: **
 '''
