@@ -2,8 +2,6 @@
 Your puzzle answer was 187987920774390.
 
 Both parts of this puzzle are complete! They provide two gold stars: **
-
-2873 low
 """
 
 import os
