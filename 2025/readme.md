@@ -1,7 +1,7 @@
 
 # 🎄 AdventOfCode 2025
 
-![Stars](https://img.shields.io/badge/Stars-20%2F24-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-11%2F12-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-█████████████████▒░░_86%25-777777)
+![Stars](https://img.shields.io/badge/Stars-24%2F24-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-12%2F12-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-████████████████████_100%25-777777)
 
 # 📖 About
 
@@ -25,9 +25,9 @@ Each problem is solved in Python, with a focus on:
 | 07 | ⭐⭐ | 0.001s | 0.002s | DFS + caching |
 | 08 | ⭐⭐ | 0.044s | 0.312s |  |
 | 09 | ⭐⭐ | 0.011s | 0.281s |  |
-| 10 | ⭐🌑 | 0.008s |  |  |
-| 11 | ⭐🌑 | 0.001s |  |  |
-| 12 | 🌑🌑 |  |  |  |
+| 10 | ⭐⭐ | 0.008s | 0.212s | problem 02: simple equation system |
+| 11 | ⭐⭐ | 0.001s |  |  |
+| 12 | ⭐⭐ |  | - |  |
 
 # 💬 Notes
 

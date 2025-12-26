@@ -8,7 +8,7 @@ Each year’s folder contains Python solutions for that year’s challenges.
 
 | **Year** | **Stars** | **Problems** | **Progress** | **Notes** |
 |:--------:|:---------:|:------------:|:-------------:|:---------:|
-| [**2025**](https://github.com/lambertinialessandro/adventofcode/tree/main/2025) |  `20/24` 🌖 |  `11/12` 🧠 | █████████████████▒░░ &nbsp; 86% | Second year! 🔥 |
+| [**2025**](https://github.com/lambertinialessandro/adventofcode/tree/main/2025) |  `24/24` 🌕 |  `12/12` 🎯 | ████████████████████ &nbsp; 100% | Second year! 🔥 |
 | [**2024**](https://github.com/lambertinialessandro/adventofcode/tree/main/2024) | `45/50` 🌕 | `25/25` 🎯 | ██████████████████▒░ &nbsp; 92% | First year! 🔥 |
 | [**2023**](https://github.com/lambertinialessandro/adventofcode/tree/main/2023) | `16/50` 🌘 | `10/25` 🧠 | ██████▓░░░░░░░░░░░░░ &nbsp; 34% | Some unfinished business… |
 | [**2022**](https://github.com/lambertinialessandro/adventofcode/tree/main/2022) |  `0/50` 🌑 |  `0/25` ❌ | ░░░░░░░░░░░░░░░░░░░░ &nbsp; 0% | |
