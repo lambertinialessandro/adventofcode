@@ -3,9 +3,6 @@
 Your puzzle answer was 25663320831.
 
 Both parts of this puzzle are complete! They provide two gold stars: **
-
-24819009929
-
 '''
 
 import os

@@ -45,7 +45,7 @@ def main():
     for _, p1, p2 in distances:
         conn1 = connections.get(p1)
         conn2 = connections.get(p2)
-        
+
         if conn1 is None and conn2 is None:
             connections[p1] = idx_group
             connections[p2] = idx_group
@@ -60,15 +60,15 @@ def main():
         elif conn1 != conn2:
             if len(groups[conn1]) < len(groups[conn2]):
                 conn1, conn2 = conn2, conn1
-                
+
             for point in groups[conn2]:
                 connections[point] = conn1
-                
+
             groups[conn1].extend(groups[conn2])
             del groups[conn2]
 
     size_big_3 = math.prod(sorted(map(len, groups.values()), reverse=True)[:3])
-    
+
     print(
         f"\n# SOLUTION: the sizes of the three largest circuits multiply together is: {size_big_3}\n"
     )

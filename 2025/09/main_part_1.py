@@ -11,8 +11,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")
 from utils.read_file import read_file
 from utils.test_solution import test_solution
 
-import math
-
 
 @test_solution(name="DAY 09 PART 1", runs=100)
 def main():
@@ -31,7 +29,9 @@ def main():
             if area > max_area:
                 max_area = area
 
-    print(f"\n# SOLUTION: the largest area of any rectangle you can make is: {max_area}\n")
+    print(
+        f"\n# SOLUTION: the largest area of any rectangle you can make is: {max_area}\n"
+    )
 
 
 if __name__ == "__main__":

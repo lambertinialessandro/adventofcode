@@ -1,5 +1,5 @@
 """
-Your puzzle answer was ____.
+Your puzzle answer was 1470616992.
 
 Both parts of this puzzle are complete! They provide two gold stars: **
 """
@@ -96,7 +96,9 @@ def main():
             print("Found: ", area, p1, p2)
             break
 
-    print(f"\n# SOLUTION: the largest area of any rectangle you can make using only red and green tiles is: {max_area}\n")
+    print(
+        f"\n# SOLUTION: the largest area of any rectangle you can make using only red and green tiles is: {max_area}\n"
+    )
 
 
 if __name__ == "__main__":
