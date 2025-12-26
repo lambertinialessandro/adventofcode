@@ -69,8 +69,10 @@ def download_problem(year, day):
                     elif "You don't have enough stars" in formatted_text:
                         # TODO: maybe is better to set part_two = None
                         part_two = re.findall(r"(--- Part Two.*?)You don't have enough stars", formatted_text, re.DOTALL)[0]
-                    else:
+                    elif formatted_text.count("Your puzzle answer was") == 2:
                         part_two = re.findall(r"(--- Part Two.*?)Your puzzle answer was", formatted_text, re.DOTALL)[0]
+                    else:
+                        part_two = re.findall(r"(--- Part Two.*?)Both parts of this puzzle are complete!", formatted_text, re.DOTALL)[0]
                 else:
                     part_one = re.findall(r"(--- Day.*?)To begin, get your puzzle input", formatted_text, re.DOTALL)[0]
 
