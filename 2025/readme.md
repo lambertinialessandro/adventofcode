@@ -26,8 +26,8 @@ Each problem is solved in Python, with a focus on:
 | 08 | ⭐⭐ | 0.044s | 0.312s |  |
 | 09 | ⭐⭐ | 0.011s | 0.281s |  |
 | 10 | ⭐⭐ | 0.008s | 0.212s | problem 02: simple equation system |
-| 11 | ⭐⭐ | 0.001s |  |  |
-| 12 | ⭐⭐ |  | - |  |
+| 11 | ⭐⭐ | 0.000s | 0.002s |  |
+| 12 | ⭐⭐ | 0.003s | - | i'm not satisfied by the solution |
 
 # 💬 Notes
 
