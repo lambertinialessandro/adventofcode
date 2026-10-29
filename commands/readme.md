@@ -9,6 +9,8 @@
 | `create_solution.py` | `<year>` `<day>` | Creates two new solution files (`part1.py` and `part2.py`) in the corresponding year/day folder. |
 | --- | --- | --- |
 | `start_problem.py` | `<year>` `<day>` | Write the problem statement in the respective year/day folder. Create 2 new files for the solution. |
+| --- | --- | --- |
+| `generate_progress_bar.py` | `<persentage>` | Generate a progress bar string based on a given percentage. |
 
 ## Example
 
