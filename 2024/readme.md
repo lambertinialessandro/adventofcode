@@ -1,7 +1,7 @@
 
 # 🎄 AdventOfCode 2024
 
-![Stars](https://img.shields.io/badge/Stars-45%2F50-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-25%2F25-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-██████████████████▒░_92%25-777777)
+![Stars](https://img.shields.io/badge/Stars-50%2F50-yellow) &nbsp;![Problems Solved](https://img.shields.io/badge/Problems-25%2F25-blue) &nbsp;![Progress](https://img.shields.io/badge/Progress-████████████████████_100%25-777777)
 
 # 📖 About
 
@@ -18,8 +18,8 @@ Each problem is solved in Python, with a focus on:
 |---|---|---|---|---|
 | 01 | ⭐⭐ | 0.001s | 0.010s |  |
 | 02 | ⭐⭐ | 0.002s | 0.003s |  |
-| 03 | ⭐⭐ | 0.000s | 0.001s | regex |
-| 04 | ⭐⭐ | 0.004s | 0.004s | regex + "text iterator", Sliding window |
+| 03 | ⭐⭐ | 0.000s | 0.001s | Regex |
+| 04 | ⭐⭐ | 0.004s | 0.004s | Regex + "text iterator", Sliding window |
 | 05 | ⭐⭐ | 0.006s | 0.133s |  |
 | 06 | ⭐⭐ | 0.003s | 3.331s | Not satisfied with Part 2 😅 |
 | 07 | ⭐⭐ | 0.047s | 1.501s | Depth-first search |
@@ -35,12 +35,12 @@ Each problem is solved in Python, with a focus on:
 | 17 | ⭐⭐ | 0.000s | 0.000s | System of linear equations (not totally satisfied because of the second loop for the error correction) |
 | 18 | ⭐⭐ | 0.011s | 4.669s | A* search |
 | 19 | ⭐⭐ | 0.061s | 0.396s | Caching recursive algorithm |
-| 20 | ⭐🌗 | 0.036s |  |  |
-| 21 | ⭐🌗 | 0.000s |  | DFS |
-| 22 | ⭐🌑 | 0.748s |  |  |
+| 20 | ⭐⭐ | 0.036s | 1.956s |  |
+| 21 | ⭐⭐ | 0.000s | 0.000s | DFS |
+| 22 | ⭐⭐ | 0.748s |  |  |
 | 23 | ⭐⭐ | 0.011s | 0.010s |  |
-| 24 | ⭐🌑 | 0.002s |  |  |
-| 25 | ⭐🌑 | 0.007s |  |  |
+| 24 | ⭐⭐ | 0.001s | 0.002s |  |
+| 25 | ⭐⭐ | 0.007s | - |  |
 
 # 💬 Notes
 

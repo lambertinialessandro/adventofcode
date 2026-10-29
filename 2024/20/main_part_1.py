@@ -33,6 +33,7 @@ def main():
     content = read_file(os.path.join(os.path.dirname(__file__),"input.txt")).strip()
     if not content: return
     
+    threshold = 100
     possible_directions = {direction: [d for d in Direction if d != (direction - 2)] for direction in Direction}
     moves = {Direction.NORTH: [-1, 0], Direction.EST: [0, 1], Direction.SOUTH: [1, 0], Direction.WEST: [0, -1]}
 
@@ -57,7 +58,6 @@ def main():
         [cost, pr, pc, pd] = heapq.heappop(opened)
         visited[tuple([pr, pc])] = cost
         if pr == er and pc == ec:
-            score = cost
             break
 
         for direction in possible_directions[pd]:
@@ -75,29 +75,23 @@ def main():
         if pr == er and pc == ec:
             break
 
-        #print(cost, pr, pc, pd)
-
         for direction in possible_directions[pd]:
             [dr, dc] = moves[direction]
             npr, npc = pr + dr * 2, pc + dc * 2
 
             if 0 <= npr < nr and 0 <= npc < nc and env[npr][npc] != Tile.WALL():
-                if visited[tuple([npr, npc])] > cost + 100:
+                
+                if visited[tuple([npr, npc])] > cost + threshold:
                     count += 1
         
         for direction in possible_directions[pd]:
             [dr, dc] = moves[direction]
             npr, npc = pr + dr, pc + dc
 
-            #print("\t", npr, npc, env[npr][npc])
             if env[npr][npc] != Tile.WALL():
                 if visited[tuple([npr, npc])] > cost:
                     cost, pr, pc, pd = visited[tuple([npr, npc])], npr, npc, direction
                     break
-
-
-
-
 
     """ if True:
         zero_env = [[0] * len(line) for line in env]
@@ -105,7 +99,7 @@ def main():
         for i, line in enumerate(env):
             for j, char in enumerate(line):
                 if char == "#":
-                    zero_env[i][j] = -1000
+                    zero_env[i][j] = -10000
 
         for k, v in visited.items():
             [r, c] = k
@@ -130,7 +124,7 @@ def main():
         plt.yticks([])
         plt.show() """
     
-    print(f"\n# SOLUTION: number of cheats that save at least 100 picoseconds: {count}\n")
+    print(f"\n# SOLUTION: number of cheats that save at least {threshold} picoseconds: {count}\n")
 
 if __name__ == "__main__":
     main()

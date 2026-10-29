@@ -11,7 +11,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')
 from utils.read_file import read_file
 from utils.test_solution import test_solution
 
-@test_solution(name="DAY 22 PART 1", runs=100)
+@test_solution(name="DAY 22 PART 1", runs=10)
 def main():
     print("\n### DAY 22 PART 1 ###")
 
@@ -19,17 +19,28 @@ def main():
     if not content: return
 
     secret_numbers = [*map(int, content.split("\n"))]
+    visited = {}
 
     def mix(value, secret_number):
         return value ^ secret_number
     def prune(secret_number):
         return secret_number % 16777216
+    def step(secret_number):
+        old_secret_number = secret_number
+        secret_number = prune(mix(secret_number * 64, secret_number))
+        secret_number = prune(mix(secret_number // 32, secret_number))
+        secret_number = prune(mix(secret_number * 2048, secret_number))
+        visited[old_secret_number] = secret_number
+        return secret_number
+    
     def new_secret_number(secret_number, reps):
         for _ in range(reps):
-            secret_number = prune(mix(secret_number * 64, secret_number))
-            secret_number = prune(mix(secret_number // 32, secret_number))
-            secret_number = prune(mix(secret_number * 2048, secret_number))
+            if secret_number in visited:
+                secret_number = visited[secret_number]
+            else:
+                secret_number = step(secret_number)
         return secret_number
+    
 
     sum_secret_numbers = sum([new_secret_number(secret_number, 2000) for secret_number in secret_numbers])
     

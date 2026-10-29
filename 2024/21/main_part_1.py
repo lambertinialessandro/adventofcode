@@ -93,7 +93,7 @@ def main():
             r, c = nr, nc
         
         [r, c] = directional_btns["A"]
-        human_code = ""
+        human_code = "" # varible not required for the execution of the code
         for single_code in robot_code:
             [nr, nc] = directional_btns[single_code]
             dr, dc = r - nr, c - nc
@@ -116,7 +116,7 @@ def main():
         complexity_sum += char_count * numeric_part
 
     
-    print(f"\n# SOLUTION: sum of complexities of five codes: {complexity_sum}\n")
+    print(f"\n# SOLUTION: sum of complexities of all codes: {complexity_sum}\n")
 
 if __name__ == "__main__":
     main()
