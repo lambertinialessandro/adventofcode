@@ -20,6 +20,16 @@ class SmartEnum(Enum):
             return [*self.__class__][next_value]
         return NotImplemented
     
+    def __radd__(self, other):
+        if isinstance(other, int):
+            return self.__add__(other)
+        return NotImplemented
+
+    def __mod__(self, other):
+        if isinstance(other, int):
+            return self.value % other
+        return NotImplemented
+    
     def __lt__(self, other):
         if isinstance(other, SmartEnum):
             return self.value < other.value

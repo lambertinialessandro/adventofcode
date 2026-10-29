@@ -9,7 +9,7 @@ def test_solution(name=None, runs=1):
             print("\n\033[92mRunning function with measure_time:\033[0m")
             _ = measure_time(name=name)(func)(*args, **kwargs)
 
-            print("\n\033[92mRunning function with average_measured_time:\033[0m")
+            print(f"\n\033[92mRunning function with average_measured_time (for {runs} times):\033[0m")
             _ = average_measured_time(name=name, runs=runs)(func)(*args, **kwargs)
 
             print()
