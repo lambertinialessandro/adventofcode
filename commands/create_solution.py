@@ -40,7 +40,7 @@ def create_solution(year, day):
     # Create the main_part_1.py file
     if not os.path.exists(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_1.py")):
         content = read_file(os.path.join(os.path.dirname(__file__), "templates", "template_main_part_1.txt"))
-        content = re.sub(r"DAY ____ PART 1", f"DAY {day} PART 1", content)
+        content = re.sub(r"\${day}", f"{day}", content)
         with open(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_1.py"), "w") as file:
             file.write(content)
         print("\033[92mFile main_part_1.py\033[0m created\n")
@@ -50,12 +50,25 @@ def create_solution(year, day):
     # Create the main_part_2.py file
     if not os.path.exists(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_2.py")):
         content = read_file(os.path.join(os.path.dirname(__file__), "templates", "template_main_part_2.txt"))
-        content = re.sub(r"DAY ____ PART 2", f"DAY {day} PART 2", content)
+        content = re.sub(r"\${day}", f"{day}", content)
         with open(os.path.join(os.path.dirname(__file__), "..", year, day, "main_part_2.py"), "w") as file:
             file.write(content)
         print("\033[92mFile main_part_2.py\033[0m created\n")
     else:
         print("\033[92mFile main_part_2.py\033[0m already exists\n")
+    
+    # Create the readme.py file
+    if not os.path.exists(os.path.join(os.path.dirname(__file__), "..", year, "readme.md")):
+        content = read_file(os.path.join(os.path.dirname(__file__), "templates", "template_readme.txt"), encoding="utf-8")
+        content = re.sub(r"\${year}", f"{year}", content)        
+        with open(os.path.join(os.path.dirname(__file__), "..", year, "readme.md"), "w", encoding="utf-8") as file:
+            file.write(content)
+        print("\033[92m(Extra) File readme.md\033[0m created\n")
+
+
+""" with open(os.path.join(os.path.dirname(__file__), "templates", "template_readme.txt"), 'r', encoding="utf-8") as file:
+    print(file.read())
+ """
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -68,3 +81,5 @@ if __name__ == "__main__":
     day = sys.argv[2]
 
     create_solution(year, day)
+
+
