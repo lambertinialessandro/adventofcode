@@ -20,7 +20,7 @@ def main():
     if not content:
         return
 
-    print(f"\n# AoC Completed.\n")
+    print(f"\n# AoC 2025 Completed.\n")
 
 
 if __name__ == "__main__":
